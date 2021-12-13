@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "containermenudupefix",
+  "version": "${version}",
+  "name": "Container Menu Dupe Fix",
+  "description": "This mod fixes a duplication glitch regarding interaction with containers.",
+  "authors": [
+    "hqics"
+  ],
+  "contact": {
+    "sources": "https://github.com/hqics/ContainerMenuDupeFix"
+  },
+  "license": "LGPL-3.0",
+  "icon": "assets/containermenudupefix/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.hqics.mods.ContainerMenuDupeFixMod"
+    ]
+  },
+  "mixins": [
+    "containermenudupefix.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  }
+}
