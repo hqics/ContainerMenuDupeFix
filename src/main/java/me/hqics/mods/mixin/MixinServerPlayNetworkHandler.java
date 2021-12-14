@@ -23,6 +23,7 @@ public class MixinServerPlayNetworkHandler {
             player.currentScreenHandler = player.playerScreenHandler;
 
             ContainerMenuDupeFixMod.LOGGER.info(player.getName().asString() + " (UUID: " + player.getUuidAsString() + ") could have attempted to duplicate items.");
+            player.server.getCommandManager().execute(player.getCommandSource().withSilent().withLevel(2), "function pandamium:misc/detect_1_18_1_item_dupe");
         }
     }
 }
